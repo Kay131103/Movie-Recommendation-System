@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommendations</title>
+</head>
+<body>
+    <h1>Your Movie Recommendations</h1>
+    <ul>
+        {% for movie, imdb_id in recommendations %}
+            <li>{{ movie }} (IMDb ID: {{ imdb_id }})</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>
